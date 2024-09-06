@@ -266,6 +266,7 @@
   .left-h .hero-buttons {
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
   }
   .left-h .figures {
     text-align: center !important;
