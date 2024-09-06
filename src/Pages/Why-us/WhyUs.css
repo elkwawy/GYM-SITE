@@ -1,0 +1,125 @@
+.why-us {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  grid-template: 2rem;
+}
+.why-us .left-w {
+  /* flex: 1 1; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  /* grid-auto-rows: 1fr; */
+}
+.why-us .left-w > img {
+  /* object-fit: cover; */
+}
+.why-us .left-w > :nth-child(1) {
+  width: 12rem;
+  grid-row: 1/3;
+  height: 28.2rem;
+}
+.why-us .left-w > :nth-child(2) {
+  width: auto;
+  height: 16rem;
+  grid-column: 2/4;
+}
+.why-us .left-w > :nth-child(3) {
+  width: 14rem;
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.why-us .left-w > :nth-child(4) {
+  grid-row: 2;
+  grid-column: 3/4;
+  width: 10rem;
+  height: 11.2rem;
+}
+
+.why-us .right-w {
+  /* flex: 1 1; */
+  text-transform: uppercase;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.why-us .right-w > span {
+  color: var(--orange);
+  font-weight: bold;
+}
+.why-us .right-w > .wty-c-us {
+  font-size: 3rem;
+  color: var(--text-white);
+  font-weight: bold;
+}
+
+.right-w .details-r {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.right-w .details-r > div {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--text-white);
+  font-weight: bold;
+  gap: 1rem;
+}
+.right-w .details-r > div > img {
+  width: 2rem;
+  height: 2rem;
+}
+.right-w .details-r .partners {
+  color: var(--gray);
+  font-weight: normal;
+}
+.details-r .partners-logo {
+  display: flex;
+  gap: 1rem;
+}
+.details-r .partners-logo img {
+  width: 2.5rem;
+}
+@media (max-width: 1220px){
+  .why-us {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .why-us .left-w {
+    width: fit-content;
+   grid-auto-rows: auto;
+   overflow-x: hidden; 
+  }
+}
+@media (max-width: 680px){
+
+  .why-us .left-w {
+   grid-auto-rows: auto;
+   overflow-x: hidden; 
+  }
+  .why-us .left-w > :nth-child(1) {
+    width: 5rem;
+    height: 14rem;
+  }
+  .why-us .left-w > :nth-child(2) {
+    width: 11rem;
+    height: 8rem;
+  }
+  .why-us .left-w > :nth-child(3) {
+    width: 5rem;
+    height: 5rem;
+  }
+  .why-us .left-w > :nth-child(4) {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media (max-width: 680px){ 
+  .why-us .right-w > .wty-c-us {
+    font-size: 2rem;
+  }
+  .right-w .details-r > div {
+    font-size: 0.8rem;
+  }
+}

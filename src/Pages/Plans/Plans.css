@@ -1,0 +1,113 @@
+.plans-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  gap: 4rem;
+  position: relative;
+}
+.plans-container .plans-header {
+  display: flex;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  justify-content: center;
+  color: var(--text-white);
+  text-transform: uppercase;
+  font-style: italic;
+}
+.plans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.plans .plan {
+  display: flex;
+  flex-direction: column;
+  background: var(--caloryCard);
+  color: var(--text-white);
+  gap: 2rem;
+  padding: 1.5rem;
+  width: 15rem;
+}
+.plans > :nth-child(2) {
+  background: var(--planCard);
+  transform: scale(1.1);
+}
+
+.plans .plan > svg {
+  fill: var(--orange);
+  width: 2rem;
+  height: 2rem;
+}
+
+.plans .plan > :nth-child(2) {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.plans .plan > :nth-child(3) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.plans .plan .see-more {
+  font-size: 0.8rem;
+}
+.plans .plan .features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.plans .plan .feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.plans .plan .feature img {
+  width: 1rem;
+}
+.plans > :nth-child(2) svg {
+  fill: var(--text-white);
+}
+.plans > :nth-child(2) button {
+  color: var(--orange);
+}
+.plans-blur-1{
+  width: 32rem;
+  height: 23rem;
+  top: 6rem;
+  left: 0;
+}
+.plans-blur-2{
+  width: 32rem;
+  height: 23rem;
+  top: 10rem;
+  right: 0;
+} 
+@media (max-width: 1230px){
+  .plans-container .plans-header {
+    gap: 4rem;
+    font-size: 2.2rem;
+  }
+} 
+@media (max-width: 1100px){
+  .plans-container .plans-header {
+    gap: 3rem;
+    font-size: 2.1rem;
+  }
+} 
+@media (max-width: 960px){
+
+  .plans-container .plans-header {
+    gap: 1.5rem;
+    font-size: 1.6rem;
+  }
+} 
+@media (max-width: 715px){
+  .plans {
+    flex-direction: column;
+  }
+  .plans-container .plans-header {
+    text-align: center;
+    flex-direction: column;
+  }
+} 
