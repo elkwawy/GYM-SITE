@@ -14,7 +14,7 @@ function Footer() {
           <img src={linkedin} alt="" />
         </div>
         <div className="loge loge-f">
-          <img className="loge-img" src={loge}></img>
+          <img className="loge-img" src={loge} alt=""></img>
           <div className="loge-text">
             <span>AK Body</span>
             <span>Building</span>

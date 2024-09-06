@@ -7,7 +7,7 @@ import heart from "../../images/heart.png";
 import calories from "../../images/calories.png";
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
-const transition = { type: "spring", duration: 3 };
+const transition = { type: "spring", duration: 2  };
 const mobile = window.innerWidth <= 768 ? true : false;
 function Hero() {
   return (
@@ -47,19 +47,19 @@ function Hero() {
         <div className="figures">
           <div>
             <span>
-              <NumberCounter preFix="+" start={80} end={140} delay={3} />
+              <NumberCounter start={80} end={140} delay={3}  />
             </span>{" "}
             <span>expert coaches</span>
           </div>
           <div>
             <span>
-              <NumberCounter preFix="+" start={500} end={600} delay={4} />
+              <NumberCounter preFix="" start={500} end={600} delay={3} />
             </span>{" "}
             <span>Members joined</span>
           </div>
           <div>
             <span>
-              <NumberCounter preFix="+" start={10} end={35} delay={3} />
+              <NumberCounter start={10} end={35} delay={3} />
             </span>{" "}
             <span>fitness programs</span>
           </div>
