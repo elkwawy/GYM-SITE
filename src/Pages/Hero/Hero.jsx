@@ -7,7 +7,7 @@ import heart from "../../images/heart.png";
 import calories from "../../images/calories.png";
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
-const transition = { type: "spring", duration: 3 };
+const transition = { type: "spring", duration: 2 };
 const mobile = window.innerWidth <= 768 ? true : false;
 function Hero() {
   return (
